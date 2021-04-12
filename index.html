@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>home page from bilibili</title>
+    <title>NI's home page</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
@@ -33,14 +33,25 @@
         }
 
         .home img{
-           width: 100%;
            -webkit-filter:  contrast(100%);
-           filter:  contrast(200%) brightness(80%); 
+           filter: grayscale(100%) contrast(200%) brightness(80%); 
         }
 
-        .folio img{
-            filter: grayscale(100%);
-            
+        .home img:hover{
+            filter: contrast(200%) brightness(80%);
+        }
+
+        .share img{
+            filter: grayscale(100%);            
+        }
+
+        .share img:hover{
+            filter: brightness(80%);
+        }
+
+        .taoteching{
+            width: 67%;
+            margin: 0 60;
         }
 
         aside{
@@ -129,7 +140,7 @@
         }
 
         .about,
-        .folio,
+        .share,
         .contact{
             line-height: 1.5em;
             letter-spacing: 1px;
@@ -138,11 +149,11 @@
         }
 
         .about h2,
-        .folio h2,
+        .share h2,
         .contact h2{
             font-weight: 300;
             text-transform: uppercase;
-            /* text-decoration: line-through; */
+            text-decoration: underline;
             padding-bottom: 10px;
             margin: 100px 0 0 0;
             letter-spacing: 4px;
@@ -180,14 +191,14 @@
             width: 95%;
         }
 
-        .folio h3{
+        .share h3{
             color: white;
             font-weight: 300;
             letter-spacing: 2px;
         }
 
 
-        .folio p{
+        .share p{
             font-size: 0.875em;
         }
 
@@ -394,8 +405,8 @@
         <p>About</p>
         </a>
 
-        <a href="#folio"><i class="material-icons md-36">image</i>
-        <p>Folio</p>
+        <a href="#share"><i class="material-icons md-36">image</i>
+        <p>Share</p>
         </a>
 
         <a href="#contact"><i class="material-icons md-36">mail</i>
@@ -407,7 +418,7 @@
     <nav class="mobile-nav">
         <a href="#home">Home</a>
         <a href="#about">About</a>
-        <a href="#folio">Folio</a>
+        <a href="#share">share</a>
         <a href="#contact">Contact</a>
     </nav>
 
@@ -424,63 +435,67 @@
 
         <h2>About me</h2>
         <p>
-            <span>Hello</span> I'm Runyu Ni, life long learner.
+            <span>Hello.I'm Runyu Ni. </span>Currently studying for a PhD in Takama Lab.My main research direction is knowledge graphs, and I am also very interested in various technologies of the AI field. My goal is to be a lifelong learner.
         </p>
         <p>
-            I believe
+          I believe that philosophy is the pursuit of truth, and mathematics is the language of philosophy. My mathematics ability is not very good, I will continue to study hard.
         </p>
 
-        <h3>My Skills</h3>
-        <p>Figma</p>
-        <div class="container">
-            <div class="skill">90%</div>
-        </div>
+        <h3>My Experiences</h3>
+        <p>Obtain a bachelor's degree from University of Science and Technology Beijing in 2018</p>
+        <p>Obtain a master's degree from University of Science and Technology Beijing in 2021</p>
 
     </section>
 
-    <section class="folio" id="folio">
+    <section class="share" id="share">
 
-        <h2>Folio</h2>
+        <h2>share</h2>
 
         <div class="row-halves">
             
             <div class="col">
-                <img src="me.png" alt="">
-                <h3>Business</h3>
+                <img src="wind.jpg" alt="">
+                <h3>風が強く吹いている</h3>
                 <p>
-                    Building
+                    This anime is one of my favorite animes. It not only inspired me to start running, but also gave me the courage to overcome the difficulties and obstacles of life. The meaning of running may lie in the process of step by step towards the goal, whether it is happiness or pain, as long as you never stop moving forward, you can reach the end. For me, the meaning of life is probably the same.
+                </p>
+                <p>
+                    这部动漫是我最喜欢的动漫之一，它不仅激励我开始跑步，同时还给予我跨越人生艰难险阻的勇气。跑步的意义或许就在于向着目标一步一步迈进的过程，快乐也好，痛苦也罢，只要永不停歇的向前就能抵达终点。对我来说，人生的意义也大概如此吧。
                 </p>
             </div>
 
             <div class="col">
-                <img src="me.png" alt="">
-                <h3>Mobile</h3>
+                <img src="20b-Tao-Te-Ching-Quotes.jpg" alt="" class="taoteching">
+                <h3>道德经</h3>
                 <p>
-                    Building
+                    This book becomes more and more curious as you read it, and the mystery in it, please find out for yourself.
+                </p>
+                <p>
+                    此书愈读愈奇，其中奥妙，请诸君自寻
                 </p>
             </div>
 
         </div>
 
-<div class="row-halves">
-    
-<div class="col">
-    <img src="me.png" alt="">
-    <h3>Ux desig</h3>
-    <p>
-        Building xx
-    </p>
-</div>
+        <!-- <div class="row-halves">
+            
+            <div class="col">
+                <img src="me.png" alt="">
+                <h3>Ux desig</h3>
+                <p>
+                    Building xx
+                </p>
+            </div>
 
-<div class="col">
-    <img src="me.png" alt="">
-    <h3>Personal</h3>
-    <p>
-        Building hh
-    </p>
-</div>
+            <div class="col">
+                <img src="me.png" alt="">
+                <h3>Personal</h3>
+                <p>
+                    Building hh
+                </p>
+            </div>
 
-</div>
+        </div> -->
 
     </section>
 
@@ -502,14 +517,14 @@
     <footer>
         <section class="top-bar">
             
-            <a href=""><i class="fab fa-github"></i>
+            <a href="https://github.com/Scaredname?tab=repositories"><i class="fab fa-github"></i>
                 <img src="github_filled1600.png" alt="" class="github">
                 <p class="githubtext">github</p>
             </a>
         </section>
 
         <scetion class="bottom-bar">
-            <p>&copy 2018 | All rights reserved</p>
+            <p>&copy 2021 | All rights reserved</p>
 
         </scetion>
     </footer>
