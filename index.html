@@ -21,7 +21,6 @@
             background: #000;
             color: white;
             font-family: "Oxygen", sans-serif;
-            /* overflow-y: hidden; */
         }
 
         a{
@@ -104,6 +103,19 @@
         aside nav a:nth-child(2):hover{
             background: #b2b2b2;
             color: #222;
+        }
+
+        .buttonmail{
+            color: #b2b2b2;
+        }
+        
+        .buttonmail:hover{
+            color: white;
+        }
+
+        
+        .buttonmail p i{
+            margin-right: 5;
         }
 
         main{
@@ -320,6 +332,11 @@
             text-align: center;
         }
 
+        .hide {
+            display: none;
+        }
+
+
         @media screen and (max-width: 768px){
             .row-halves{
                 display: block;
@@ -502,7 +519,7 @@
 <section class="contact" id="contact">
     <h2>Contact</h2>
     <div class="container">
-        <form action="">
+        <!-- <form action="">
             <label for="name">Name</label>
             <input type="text" id="name" name="name">
             <label for="email">Email</label>
@@ -510,7 +527,10 @@
                 <label for="message">Message</label>
                 <textarea name="message" id="message" style="height: 200px;"></textarea>
                 <input type="submit" value="message">
-        </form>
+        </form> -->
+        <a href="mailto:nimoumou96@gmail.com" class="buttonmail">
+            <p><i class="material-icons md-36">mail</i>nimoumou96@gmail<span class="hide">null</span>.com</p>
+        </a>
     </div>
 </section>
 
