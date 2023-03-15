@@ -152,6 +152,7 @@
         }
 
         .about,
+        .publication,
         .share,
         .contact{
             line-height: 1.5em;
@@ -161,6 +162,7 @@
         }
 
         .about h2,
+        .publication h2,
         .share h2,
         .contact h2{
             font-weight: 300;
@@ -171,15 +173,18 @@
             letter-spacing: 4px;
         }
 
+        .publication p,
         .about p{
             color: #b2b2b2;
         }
-
+        
+        .publication span,
         .about span{
             font-weight: 600;
             color: white;
         }
-
+        
+        .publication h3,
         .about h3{
             font-weight: 300;
             margin: 50px 0;
@@ -422,6 +427,10 @@
         <p>About</p>
         </a>
 
+        <a href="#publication"><i class="material-icons md-36">feed</i>
+        <p>Publication</p>
+        </a>
+
         <a href="#share"><i class="material-icons md-36">image</i>
         <p>Share</p>
         </a>
@@ -435,7 +444,8 @@
     <nav class="mobile-nav">
         <a href="#home">Home</a>
         <a href="#about">About</a>
-        <a href="#share">share</a>
+        <a href="#publication">Publication</a>
+        <a href="#share">Share</a>
         <a href="#contact">Contact</a>
     </nav>
 
@@ -462,6 +472,23 @@
         <p>Obtain a bachelor's degree from University of Science and Technology Beijing in 2018</p>
         <p>Obtain a master's degree from University of Science and Technology Beijing in 2021</p>
 
+    </section>
+
+    <section class="publication" id="publication">
+        <h2>
+            Publication
+        </h2>
+        <a href="https://www.researchgate.net/profile/Runyu-Ni-2/research">
+            <p>
+                *Learning Framework of Entity and Entity Type Composition Representation for Knowledge Graph Completion.
+            </p>
+            <p>
+                *Recent advances, key techniques and future challenges of knowledge graph
+            </p>
+            <p>
+                *Specific Time Embedding for Temporal Knowledge Graph Completion
+            </p>
+        </a>
     </section>
 
     <section class="share" id="share">
@@ -545,7 +572,6 @@
 
         <scetion class="bottom-bar">
             <p>&copy 2021 | All rights reserved</p>
-
         </scetion>
     </footer>
 </body>
